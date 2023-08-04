@@ -1,0 +1,47 @@
+function generateHashtag(string):
+    trim the string to get rid of whitespace at beginning and end
+
+    store the trimmed string in a trimmed_string variable
+
+    if trimmed_string is empty string:
+        return false
+    
+    create a boolean variable called startsWithHashtag
+
+    check if trimmed_string stars with a hashtag
+
+    if trimmed_string starts with a hashtag:
+        set startsWithHashtag to true
+    else:
+        set it to false
+
+    convert trimmed_string to trimmed_string_array
+
+    iterate over trimmed_string_array
+
+    for each word in trimmed_string_array:
+        capitalize the first letter and replace
+        the word at current index with new capitalized word
+
+    transform trimmed_string_array to a string eliminating all whitespace
+
+    stored this in a variable called result
+    
+    if startsWithHashtag is true:
+        check the length of result's characters
+
+        if the length is greater than 140:
+            return false
+        else:
+            return result
+
+    else:
+        append a hashtag to the beginning of result
+
+        if the length of result is greater than 140:
+            return false
+        else:
+            return result
+
+    
+    
