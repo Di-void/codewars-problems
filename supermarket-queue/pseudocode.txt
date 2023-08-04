@@ -1,0 +1,19 @@
+function queueTime(queue, tills):
+    if queue is empty:
+        return 0
+
+    create tillsArray with tills number of zeros
+    
+    for each customer in queue:
+        find the index of the shortest line (till) in tillsArray
+        add the customer's time to the shortest line
+
+    find the maximum value (longest line) in tillsArray
+    return the maximum value as the total time
+
+// Example usage
+result = queueTime([5, 3, 4], 1)
+print result  // Output: 12
+
+result = queueTime([10, 2, 3, 3], 2)
+print result  // Output: 10

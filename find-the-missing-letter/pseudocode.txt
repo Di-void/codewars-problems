@@ -1,0 +1,32 @@
+function returnMissing(letters):
+    abcdefghijklmnopqrstuvwxyz
+
+    create a variable to store the case of the letters
+    in letters array and set the default value to 'lowercase'
+
+    find first letter in letters array
+
+    convert it to lowercase
+        
+    strictly check equality of lowercase first letter to original first letter
+
+    if they are not equal:
+        variable for tracking case should be set to 'uppercase'
+
+    convert it to lowercase and slice the alphabet from that letter
+
+    create a variable to store the slice
+
+    for each letter after first letter in this sliced array:
+        check the letter in the matching index of letters array
+        after converting the value in the matching index to lowercase
+
+        if their values match:
+            continue i.e skip this iteration to the next one
+        if they values don't match:
+            check the case stored in the case tracking variable we declared
+
+            if it's lowercase:
+                return the letter in the current index of sliced as is
+            else:
+                return the letter in the current index of sliced.toUpperCase()
