@@ -1,0 +1,16 @@
+function countBits(number):
+    if number is 0:
+        return 0
+    convert number to binary format
+
+    create bitCount variable
+
+    store result in binaryFormat variable
+
+    convert binaryFormat to string
+
+    for each char in binaryFormat:
+        if char equals 1:
+            increase count by 1
+        else:
+            skip iteration
