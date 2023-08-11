@@ -1,0 +1,31 @@
+function twoSum(array, target):
+    create an index1 and index2 variable
+
+    set index1 to 0
+
+    create start_search_idx variable
+
+    set start_search_idx = index1 + 1
+
+    create restartLoop variable
+
+    set restartLoop to true (so it can run first time)
+
+    while restartLoop is true:
+        restartLoop = false; (won't run again unless match not found)
+
+        for each item from start_search_idx in array:
+            create match variable
+
+            set match = array[index1] + item === target
+
+            if match is true:
+                set index2 to current item index
+                break loop
+            else if current item is last item and match is false:
+                index1 = index1 + 1
+                restartLoop = true
+            else:
+                continue
+
+    return [index1, index2]
