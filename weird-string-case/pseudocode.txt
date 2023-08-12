@@ -1,0 +1,39 @@
+1:
+
+function toWeirdCase(string):
+    split string by single space into 'wordsArray'
+
+    create newString variable
+
+    for each word in wordsArray: 
+        for each letter in word:
+            if current index modulo 2 === 0:
+                append to newString variable capitalized current letter
+            else:
+                append to newString variable capitalized current letter
+
+        if wordsArray length > 1 and current word is not last in wordsArray:
+            append single space to newString
+    
+    return newString;
+
+
+
+
+2:
+
+function toWeirdCase(string):
+    split string by single space into 'wordsArray'
+
+    for each word in wordsArray:
+        split word into word_array by empty string
+
+        for each letter in word_array:
+            if current index modulo 2 === 0:
+                word_array[currentIndex] = capitalized(word_array[currentIndex])
+            else:
+                word_array[currentIndex] = lowercase(word_array[currentIndex])
+        
+        wordsArray[currenIndex] = word_array.join("")
+    
+    return wordsArray.join(" ");
