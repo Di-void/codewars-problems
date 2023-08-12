@@ -12,7 +12,7 @@ function toWeirdCase(someString) {
   //             : (acc += item.toLowerCase()),
   //         ""
   //       );
-  //     if (arr.length > 1 && index !== arr.length - 1) acc += " ";
+  //     if (index !== arr.length - 1) acc += " ";
   //     return acc;
   //   }, "");
 
@@ -31,7 +31,7 @@ function toWeirdCase(someString) {
   //             : (acc += item.toLowerCase()),
   //         ""
   //       );
-  //     if (wordsArray.length > 1 && index !== wordsArray.length - 1)
+  //     if (index !== wordsArray.length - 1)
   //       newString += " ";
   //   }
   //   return newString;
