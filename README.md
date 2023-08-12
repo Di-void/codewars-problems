@@ -1,3 +1,5 @@
 # My Codewars Battles
 
-This repo is where I keep some the katas I have solved or am currently solving on codewars and happened to remember to keep them. Yeah..
+Koninchiwa😃. This is where I keep some of the katas I have completed or am currently battling with, on [codewars](https://www.codewars.com/). Mata ne👋🏾
+
+**_PS: I'm not japanese_**
