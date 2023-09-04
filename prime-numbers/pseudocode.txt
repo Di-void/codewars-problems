@@ -1,0 +1,48 @@
+(prime factor decomposition of a number means writing the number as a product of prime factors)
+
+function decompose(n):
+    create pw (power) variable and set it to a default of 1
+    pw = 1
+    create dividend variable and set default to n
+    dividend = n
+    create divisor variable and set default to 2
+    divisor = 2
+    create output variable and set default to empty string;
+    output = ""
+
+    while dividend is not equal to 1:
+        check
+
+        if dividend modulo divisor === 0:
+            set dividend to the quotient
+            dividend = dividend / divisor
+            
+            increment power by 1
+            pw++
+
+            skip to the next iteration
+
+        // if the above check evaluates to false
+
+        check if power is 0 or not
+
+        if pw is truthy:
+            append (pk**nk) to output
+        
+        // do while loop
+
+        do:
+            increment divisor
+
+            divisor++
+
+            check if divisor is prime
+        while: (if dividend is not evenly divisible by divisor - rerun)
+
+        // after the above compute is done, we would have a new divisor that is a prime number
+
+        reset power to 0 and start first while-loop afresh for this new divisor value
+
+    after all the above compute is done, append the new divisor/power to output and return it
+
+    
