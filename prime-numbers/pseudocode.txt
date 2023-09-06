@@ -32,9 +32,11 @@ function decompose(n):
         // do while loop
 
         do:
-            increment divisor
+            increment divisor by 2 if divisor is greater than 2
+            if not (if it is 2) increment by 1 because even numbers
+            cannot be prime
 
-            divisor++
+            divisor += divisor > 2 ? 2 : 1
 
             check if divisor is prime
         while: (if dividend is not evenly divisible by divisor - rerun)

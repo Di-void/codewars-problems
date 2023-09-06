@@ -15,7 +15,7 @@ function decompose(n) {
       output += `(${divisor}${pw === 1 ? "" : `**${pw}`})`;
     }
     do {
-      divisor++;
+      divisor += divisor > 2 ? 2 : 1;
       for (let i = 2; i * i <= divisor; i++) {
         if (divisor % i === 0) {
           break;
