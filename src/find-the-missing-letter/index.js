@@ -1,4 +1,4 @@
-function returnMissing(letters) {
+export function returnMissing(letters) {
   const alphabets = [
     "a",
     "b",
@@ -39,14 +39,3 @@ function returnMissing(letters) {
     return isLowerCase ? sliced[i] : sliced[i].toUpperCase();
   }
 }
-
-//! TEST CASES
-
-console.log({ saw: returnMissing(["a", "b", "c", "d", "f"]), expected: "e" });
-
-console.log({ saw: returnMissing(["O", "Q", "R", "S"]), expected: "P" });
-
-console.log({
-  saw: returnMissing(["f", "g", "h", "i", "j", "k", "l", "n"]),
-  expected: "m",
-});
