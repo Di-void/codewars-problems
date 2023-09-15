@@ -1,4 +1,4 @@
-function countBits(number) {
+export function countBits(number) {
   if (number === 0) return 0;
   let bitCount = 0;
 
@@ -11,6 +11,3 @@ function countBits(number) {
 
   return bitCount;
 }
-
-// ! TEST CASES
-// console.log(`1234 returns ${countBits(1234)}`);
